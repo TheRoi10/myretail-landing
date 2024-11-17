@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+}
+
+header.hero h1 {
+    font-size: 2.5em;
+}
+
+header.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+header.hero button {
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header.hero button:hover {
+    background-color: #e0e0e0;
+}
+
+section.features {
+    text-align: center;
+    padding: 50px;
+    background: #ffffff;
+}
+
+section.features h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section.features .feature {
+    margin: 20px 0;
+}
+
+section.features .feature h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2E8B57;
+    color: white;
+}
