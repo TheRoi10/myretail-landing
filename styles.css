@@ -1,44 +1,62 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f4f6f8;
 }
 
 header.hero {
-    text-align: center;
-    padding: 50px;
-    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #1d3557, #457b9d);
     color: white;
+    padding: 50px;
 }
 
-header.hero h1 {
-    font-size: 2.5em;
+header.hero .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-header.hero p {
+header.hero .text {
+    flex: 1;
+}
+
+header.hero .text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header.hero .text p {
     font-size: 1.2em;
-    margin: 10px 0 20px;
+    margin-bottom: 30px;
 }
 
-header.hero button {
-    background-color: #ffffff;
-    color: #4CAF50;
-    border: none;
+header.hero .text button {
+    background-color: #e63946;
+    color: white;
     padding: 10px 20px;
-    font-size: 1em;
+    border: none;
     border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
 }
 
-header.hero button:hover {
-    background-color: #e0e0e0;
+header.hero .text button:hover {
+    background-color: #d62828;
+}
+
+header.hero .image img {
+    width: 300px;
+    height: auto;
 }
 
 section.features {
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
     background: #ffffff;
 }
 
@@ -47,18 +65,61 @@ section.features h2 {
     margin-bottom: 20px;
 }
 
-section.features .feature {
-    margin: 20px 0;
+section.features .feature-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
-section.features .feature h3 {
+section.features .feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+section.features .feature img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+section.features h3 {
     font-size: 1.5em;
-    color: #4CAF50;
+    color: #1d3557;
+}
+
+section.testimonials {
+    background: #f1faee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.testimonials blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #457b9d;
+}
+
+section.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #1d3557;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #2E8B57;
+    background: #1d3557;
     color: white;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
 }
